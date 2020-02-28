@@ -1,6 +1,9 @@
+#for cmd line args
+import sys
+
 #english alphabets symbols
 alpha = ' abcdefghijklmnopqrstuvwxyz012356789.?><"}{+-_)*(*#@$%^&=\\\'.,/~`:;'
-key = 3
+key = int(sys.argv[1])
 
 #function for coding
 def coded(text):
@@ -30,9 +33,9 @@ def brute(text):
 		decipher = ''
 
 #user part
-option = raw_input("Please provide whether to code(0) or decipher(1) or bruteforce(2):")
+option = sys.argv[2]
 
-text = raw_input("TEXT: ")
+text = sys.argv[3]
 
 if (option == '0'):
 	coded(text)
