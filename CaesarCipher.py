@@ -3,7 +3,7 @@ import sys
 
 #english alphabets symbols
 alpha = ' abcdefghijklmnopqrstuvwxyz012356789.?><"}{+-_)*(*#@$%^&=\\\'.,/~`:;'
-key = int(sys.argv[1])
+key = int(sys.argv[2])
 
 #function for coding
 def coded(text):
@@ -33,9 +33,9 @@ def brute(text):
 		decipher = ''
 
 #user part
-option = sys.argv[2]
+option = sys.argv[1]
 
-text = sys.argv[3]
+text = sys.argv[2]
 
 if (option == '0'):
 	coded(text)
